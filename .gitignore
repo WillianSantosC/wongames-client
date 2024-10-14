@@ -39,3 +39,6 @@ next-env.d.ts
 storybook-static
 
 .vscode
+## Panda
+styled-system
+styled-system-studio
