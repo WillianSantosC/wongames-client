@@ -5,6 +5,8 @@ const globalCss = defineGlobalStyles({
     margin: "0",
     padding: "0",
     boxSizing: "border-box",
+    "-webkit-font-smoothing": "antialiased",
+    "-moz-osx-font-smoothing": "grayscale",
   },
 
   html: {
