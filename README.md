@@ -6,7 +6,7 @@ This project uses lot of stuff as:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
+- [Panda CSS](https://panda-css.com/)
 - [Storybook](https://storybook.js.org/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
@@ -38,6 +38,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - `lint`: runs the linter in all components and pages
 - `storybook`: runs storybook on `localhost:6006`
 - `build-storybook`: create the build version of storybook
+- `prepare`: generate new CSS utilities for your project based on the configuration file and runs the husky command
 
 ## Learn More
 
