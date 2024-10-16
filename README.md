@@ -1,6 +1,4 @@
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
-
-This is a [Next.js](https://nextjs.org/) boilerplate.
+This is a [Next.js](https://nextjs.org/) Application.
 
 ## What is inside?
 
@@ -16,7 +14,13 @@ This project uses lot of stuff as:
 
 ## Getting Started
 
-First, run the development server:
+First, generate the CSS utilities with the configurations on `panda.config.ts`:
+
+```bash
+pnpm prepare
+```
+
+Second, run the development server:
 
 ```bash
 pnpm dev
