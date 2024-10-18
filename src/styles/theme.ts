@@ -1,6 +1,6 @@
 const theme = {
-  tokens: {
-    extend: {
+  extend: {
+    tokens: {
       grid: {
         container: { value: "130rem" },
         gutter: { value: "3.2rem" },
@@ -51,12 +51,11 @@ const theme = {
         modal: { value: "40" },
         alwaysOnTop: { value: "50" },
       },
-      breakpoints: {
-        sm: { value: "640px" },
+      breakpoint: {
+        sm: { value: "450px" },
         md: { value: "768px" },
-        lg: { value: "1024px" },
-        xl: { value: "1280px" },
-        "2xl": { value: "1536px" },
+        lg: { value: "1170px" },
+        xl: { value: "1440px" },
       },
     },
   },
