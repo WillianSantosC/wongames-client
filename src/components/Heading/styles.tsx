@@ -31,7 +31,7 @@ export const Wrapper = styled("h2", {
           content: "''",
           position: "absolute",
           left: "0.1rem",
-          bottom: "-1rem",
+          bottom: "-0.8rem",
           width: "5rem",
           height: "1.2rem",
           background: "token(colors.primary)",
