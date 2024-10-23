@@ -37,7 +37,7 @@ export default defineConfig({
   theme,
 
   // Whether to use css reset
-  preflight: true,
+  preflight: false,
 
   // Remove default design tokens
   presets: [],
