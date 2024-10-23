@@ -8,15 +8,15 @@ export default {
   parameters: {
     layout: "fullscreen",
   },
-} as Meta;
-
-export const Default: StoryObj = {
   argTypes: {
     children: {
       type: "string",
     },
   },
-  args: {
-    chilren: "Most Populars",
-  },
+} as Meta;
+
+export const Default: StoryObj = {};
+
+Default.args = {
+  children: "Most Populars",
 };
