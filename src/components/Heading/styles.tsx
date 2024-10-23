@@ -2,9 +2,9 @@ import { styled } from "../../../styled-system/jsx";
 
 export const Wrapper = styled("h2", {
   base: {
-    fontSize: "token(font.sizes.xlarge)",
-    "@media (min-width: token(breakpoint.md))": {
-      fontSize: "token(font.sizes.xxlarge)",
+    fontSize: {
+      base: "token(font.sizes.xlarge)",
+      _mdMI: "token(font.sizes.xxlarge)",
     },
   },
   variants: {
@@ -24,7 +24,6 @@ export const Wrapper = styled("h2", {
     },
     lineBottom: {
       true: {
-        marginBottom: "token(spacings.medium)",
         position: "relative",
 
         _after: {
