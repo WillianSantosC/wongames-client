@@ -1,6 +1,7 @@
 import { defineConfig } from "@pandacss/dev";
 import globalCss from "@/styles/global";
 import theme from "@/styles/theme";
+import conditions from "@/styles/conditions";
 
 export default defineConfig({
   // Project Font Faces
@@ -26,6 +27,8 @@ export default defineConfig({
       },
     ],
   },
+
+  conditions,
 
   // Global css styles
   globalCss,
