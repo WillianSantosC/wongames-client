@@ -28,6 +28,7 @@ export default defineConfig({
     ],
   },
 
+  // CSS conditions presets
   conditions,
 
   // Global css styles
