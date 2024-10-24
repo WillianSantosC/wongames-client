@@ -13,14 +13,14 @@ export const IconWrapper = styled("div", {
   base: {
     color: "token(colors.white)",
     "& > svg": {
-      transform: "scale(1.5)",
+      transform: "scale(1.8)",
       cursor: "pointer",
     },
     _first: {
-      padding: "1rem",
+      marginLeft: "0.5rem",
     },
     _last: {
-      padding: "1rem",
+      marginRight: "0.5rem",
     },
   },
 });
@@ -38,6 +38,7 @@ export const MenuGroup = styled("div", {
     display: "flex",
     flexGrow: "1",
     justifyContent: "flex-end",
+    alignItems: "center",
 
     "& > div": {
       marginLeft: "token(spacings.xsmall)",
@@ -46,12 +47,15 @@ export const MenuGroup = styled("div", {
 });
 
 export const MenuNav = styled("div", {
-  base: {},
+  base: {
+    marginLeft: { _mdMX: "token(spacings.small)" },
+  },
 });
 
 export const MenuLink = styled("a", {
   base: {
     position: "relative",
+    color: "token(colors.white)",
     fontSize: "token(font.sizes.medium)",
     margin: "0.3rem token(spacings.small) 0",
     textDecoration: "none",
