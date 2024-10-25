@@ -7,6 +7,10 @@ export const Wrapper = styled("button", {
     border: "0",
     borderRadius: "token(border.radius)",
     padding: "token(spacings.xxsmall)",
+
+    _hover: {
+      background: "linear-gradient(180deg, #e35565 0%, #d958a6 50%)",
+    },
   },
   variants: {
     size: {
