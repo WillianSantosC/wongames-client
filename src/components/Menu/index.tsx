@@ -25,7 +25,7 @@ const Menu = ({ username }: MenuProps) => {
       </MediaMatch>
 
       <S.LogoWrapper>
-        <Logo />
+        <Logo hideOnMobile />
       </S.LogoWrapper>
 
       <MediaMatch greaterThan="medium">
