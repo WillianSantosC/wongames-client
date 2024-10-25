@@ -15,12 +15,12 @@ export const IconWrapper = styled("div", {
     "& > svg": {
       transform: "scale(1.8)",
       cursor: "pointer",
+      _last: {
+        marginRight: "0.5rem",
+      },
     },
     _first: {
       marginLeft: "0.5rem",
-    },
-    _last: {
-      marginRight: "0.5rem",
     },
   },
 });
