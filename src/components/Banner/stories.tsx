@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import Banner from ".";
+import Banner, { BannerProps } from ".";
 
 export default {
   title: "components/Banner",
@@ -13,8 +13,28 @@ export default {
     title: "Defy death",
     subtitle: "<p>Play the new <strong>CrashLands</strong> season",
     buttonLabel: "Buy now",
-    // buttonLink: '/games/defy-death'
+    buttonLink: "/games/defy-death",
   },
 } as Meta;
 
-export const Default: StoryObj = {};
+export const Default: StoryObj<BannerProps> = {
+  render: (args) => (
+    <div style={{ maxWidth: "104rem", margin: "0 auto" }}>
+      <Banner {...args} />
+    </div>
+  ),
+};
+
+export const WithRibbon: StoryObj<BannerProps> = {
+  render: (args) => (
+    <div style={{ maxWidth: "90rem", margin: "0 auto" }}>
+      <Banner {...args} />
+    </div>
+  ),
+};
+
+WithRibbon.args = {
+  ribbon: "20% OFF",
+  ribbonSize: "normal",
+  ribbonColor: "primary",
+};
