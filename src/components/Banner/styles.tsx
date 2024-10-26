@@ -4,6 +4,13 @@ export const Wrapper = styled("main", {
   base: {
     position: "relative",
     boxSizing: { _mdMI: "0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.2)" },
+
+    "& .RibbonWrapper": {
+      right: { _lgMX: "0" },
+      _before: {
+        display: { _lgMX: "none" },
+      },
+    },
   },
 });
 

@@ -14,7 +14,7 @@ const Ribbon = ({
   color = "primary",
   size = "normal",
 }: RibbonProps) => (
-  <S.Wrapper color={color} size={size}>
+  <S.Wrapper className="RibbonWrapper" color={color} size={size}>
     {children}
   </S.Wrapper>
 );
