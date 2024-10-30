@@ -7,6 +7,10 @@ const globalCss = defineGlobalStyles({
     boxSizing: "border-box",
     "-webkit-font-smoothing": "antialiased",
     "-moz-osx-font-smoothing": "grayscale",
+
+    "&::before, &::after": {
+      boxSizing: "inherit",
+    },
   },
 
   html: {
@@ -29,6 +33,7 @@ const globalCss = defineGlobalStyles({
   body: {
     fontFamily:
       "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+    backgroundColor: "token(colors.mainBg)",
   },
 });
 
