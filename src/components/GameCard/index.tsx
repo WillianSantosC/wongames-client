@@ -38,7 +38,14 @@ const GameCard = ({
       </Ribbon>
     )}
     <S.ImageBox>
-      <Image width="100" height="100" objectFit="cover" src={img} alt={title} />
+      <Image
+        width="100"
+        height="100"
+        style={{ objectFit: "cover" }}
+        unoptimized={true}
+        src={img}
+        alt={title}
+      />
     </S.ImageBox>
     <S.Content>
       <S.Info>
