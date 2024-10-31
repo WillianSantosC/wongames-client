@@ -9,6 +9,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "generate": "plop --plopfile generators/plopfile.js",
+    "generate-page": "plop --plopfile generators/plopfile-page.js",
     "build-storybook": "storybook build",
     "prepare": "husky && panda codegen"
   },
