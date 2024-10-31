@@ -22,6 +22,7 @@ const Highlight = ({
   alignment = "right",
 }: HighlightProps) => (
   <S.Wrapper
+    className="HighlightWrapper"
     alignment={alignment}
     style={{
       backgroundImage: `url(${backgroundImage})`,
