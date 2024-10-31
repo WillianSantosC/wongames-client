@@ -2,7 +2,7 @@ import path from "path";
 
 const config = {
   staticDirs: ["../public"],
-  stories: ["../src/components/**/stories.tsx"],
+  stories: ["../src/components/**/stories.tsx", "../src/pages/**/stories.tsx"],
   addons: ["@storybook/addon-essentials"],
   framework: {
     name: "@storybook/nextjs",
