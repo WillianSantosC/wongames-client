@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { MdOutlineShoppingCart as ShoppingCartIcon } from "react-icons/md";
 import { GrSearch as SearchIcon } from "react-icons/gr";

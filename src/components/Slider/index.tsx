@@ -1,3 +1,5 @@
+"use client";
+
 import "slick-carousel/slick/slick.css";
 import SlickSlider, { Settings } from "react-slick";
 
