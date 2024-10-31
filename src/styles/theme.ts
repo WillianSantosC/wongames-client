@@ -15,6 +15,7 @@ const theme = {
         primary: { value: "#F231A5" },
         secondary: { value: "#3CD3C1" },
         mainBg: { value: "#06092B" },
+        lightBg: { value: "#F2F2F2" },
         white: { value: "#FAFAFA" },
         black: { value: "#030517" },
         lightGray: { value: "#EAEAEA" },
