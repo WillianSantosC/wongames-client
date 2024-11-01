@@ -1,25 +1,29 @@
 import { styled } from "@/panda/jsx";
+import { cva } from "@/panda/css";
 
-export const Sections = styled("section", {
-  base: {
-    "& .HeadingWrapper": {
-      marginBottom: "token(spacings.medium)",
+export const Sections = styled(
+  "section",
+  cva({
+    base: {
+      "& .HeadingWrapper": {
+        marginBottom: "token(spacings.medium)",
+      },
+
+      "& .HighlightWrapper": {
+        marginBottom: "token(spacings.medium)",
+        marginRight: { _mdMX: "calc(-token(grid.gutter) / 2)" },
+        marginLeft: { _mdMX: "calc(-token(grid.gutter) / 2)" },
+      },
+
+      "& .GameCardSliderWrapper": {
+        marginBottom: "token(spacings.medium)",
+        marginRight: { _lgMX: "calc(-token(grid.gutter) / 2)" },
+      },
+
+      marginBottom: "calc(token(spacings.large) * 2)",
     },
-
-    "& .HighlightWrapper": {
-      marginBottom: "token(spacings.medium)",
-      marginRight: { _mdMx: "calc(-token(grid.gutter) / 2)" },
-      marginLeft: { _mdMx: "calc(-token(grid.gutter) / 2)" },
-    },
-
-    "& .GameCardSliderWrapper": {
-      marginBottom: "token(spacings.medium)",
-      marginRight: { _lgMX: "calc(-token(grid.gutter) / 2)" },
-    },
-
-    marginBottom: "calc(token(spacings.large) * 2)",
-  },
-});
+  }),
+);
 
 export const SectionBanner = styled("section", {
   base: {
