@@ -8,6 +8,10 @@ const theme = {
         container: { value: "130rem" },
         gutter: { value: "3.2rem" },
       },
+      transition: {
+        default: { value: "0.3s ease-in-out" },
+        fast: { value: "0.1s ease-in-out" },
+      },
       border: {
         radius: { value: "0.4rem" },
       },
