@@ -25,6 +25,7 @@ const theme = {
         lightGray: { value: "#EAEAEA" },
         gray: { value: "#8F8F8F" },
         darkGray: { value: "#2E2F42" },
+        red: { value: "#FF6347" },
       },
       font: {
         family: {
