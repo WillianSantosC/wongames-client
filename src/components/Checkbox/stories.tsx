@@ -3,7 +3,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import Checkbox, { CheckboxProps } from ".";
 
 export default {
-  title: "components/Checkbox",
+  title: "components/Form/Checkbox",
   component: Checkbox,
   parameters: {
     layout: "fullscreen",
