@@ -43,6 +43,9 @@ export const Wrapper = styled("h2", {
           _mdMI: "token(font.sizes.xxlarge)",
         },
       },
+      huge: {
+        fontSize: "token(font.sizes.huge)",
+      },
     },
     lineColor: {
       primary: {},

@@ -42,6 +42,7 @@ const theme = {
           large: { value: "1.8rem" },
           xlarge: { value: "2.0rem" },
           xxlarge: { value: "2.8rem" },
+          huge: { value: "5.2rem" },
         },
       },
       spacings: {
