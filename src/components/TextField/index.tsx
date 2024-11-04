@@ -37,7 +37,7 @@ const TextField = ({
   };
 
   return (
-    <S.Wrapper disabled={disabled} error={!!error}>
+    <S.Wrapper className="TextFieldWrapper" disabled={disabled} error={!!error}>
       {!!label && (
         <S.Label className="Label" htmlFor={labelFor}>
           {label}

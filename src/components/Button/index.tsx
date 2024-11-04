@@ -18,6 +18,7 @@ const Button = ({
   ...props
 }: ButtonProps) => (
   <S.Wrapper
+    className="ButtonWrapper"
     size={size}
     fullWidth={fullWidth}
     minimal={minimal}
