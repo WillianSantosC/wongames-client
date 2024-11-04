@@ -7,11 +7,10 @@ import {
 
 import Button from "../Button";
 import TextField from "../TextField";
-
-import * as S from "./styles";
+import { FormLink, FormWrapper } from "../Form";
 
 const FormSignUp = () => (
-  <S.Wrapper>
+  <FormWrapper>
     <form>
       <TextField
         name="name"
@@ -40,10 +39,10 @@ const FormSignUp = () => (
       <Button size="large" fullWidth>
         Sign up now
       </Button>
-      <S.FormLink>
+      <FormLink>
         Already have an account? <Link href="/sign-in">Sign in</Link>
-      </S.FormLink>
+      </FormLink>
     </form>
-  </S.Wrapper>
+  </FormWrapper>
 );
 export default FormSignUp;
