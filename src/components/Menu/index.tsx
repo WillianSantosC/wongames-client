@@ -7,7 +7,7 @@ import { RiMenu2Fill as MenuIcon } from "react-icons/ri";
 import { MdOutlineClose as CloseIcon } from "react-icons/md";
 
 import MediaMatch from "../MediaMatch";
-import Button from "../Button";
+import LinkButton from "../LinkButton";
 import Logo from "../Logo";
 import * as S from "./styles";
 
@@ -51,7 +51,7 @@ const Menu = ({ username }: MenuProps) => {
 
         {!username && (
           <MediaMatch greaterThan="medium">
-            <Button>Sign in</Button>
+            <LinkButton href="/sign-in">Sign in</LinkButton>
           </MediaMatch>
         )}
       </S.MenuGroup>
@@ -80,11 +80,12 @@ const Menu = ({ username }: MenuProps) => {
 
         {!username && (
           <S.RegisterBox className="RegisterBox">
-            <Button fullWidth size="large">
-              Log in now
-            </Button>
+            <LinkButton href="/sign-in" fullWidth size="large">
+              Sign in
+            </LinkButton>
             <span>or</span>
-            <S.CreateAccount href="#" title="Sign Up">
+
+            <S.CreateAccount href="/sign-up" title="Sign Up">
               Sign Up
             </S.CreateAccount>
           </S.RegisterBox>

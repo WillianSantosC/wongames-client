@@ -1,12 +1,15 @@
+import { AnchorHTMLAttributes } from "react";
+
 import * as S from "./styles";
+
+type ButtonTypes = AnchorHTMLAttributes<HTMLAnchorElement>;
 
 type LinkButtonProps = {
   children?: React.ReactNode;
   size?: "small" | "medium" | "large";
   fullWidth?: boolean;
   icon?: JSX.Element;
-  href: string;
-};
+} & ButtonTypes;
 
 const LinkButton = ({
   children,
