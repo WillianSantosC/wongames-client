@@ -1,29 +1,4 @@
 import { styled } from "@/panda/jsx";
-import { cva } from "@/panda/css";
-
-export const Sections = styled(
-  "section",
-  cva({
-    base: {
-      "& .HeadingWrapper": {
-        marginBottom: "token(spacings.medium)",
-      },
-
-      "& .HighlightWrapper": {
-        marginBottom: "token(spacings.medium)",
-        marginRight: { _mdMX: "calc(-token(grid.gutter) / 2)" },
-        marginLeft: { _mdMX: "calc(-token(grid.gutter) / 2)" },
-      },
-
-      "& .GameCardSliderWrapper": {
-        marginBottom: "token(spacings.medium)",
-        marginRight: { _lgMX: "calc(-token(grid.gutter) / 2)" },
-      },
-
-      marginBottom: "calc(token(spacings.large) * 2)",
-    },
-  }),
-);
 
 export const SectionBanner = styled("section", {
   base: {
@@ -36,7 +11,7 @@ export const SectionBanner = styled("section", {
   },
 });
 
-export const SectionNews = styled(Sections, {
+export const SectionNews = styled("div", {
   base: {
     marginBottom: { base: "calc(token(spacings.xxlarge) * 2)", _mdMI: "0" },
     marginTop: { _lgMI: "-13rem" },
@@ -51,15 +26,15 @@ export const SectionNews = styled(Sections, {
   },
 });
 
-export const SectionUpcoming = styled(Sections, {
+export const SectionUpcoming = styled("div", {
   base: {
-    "& .HeadingWrapper": {
+    "& .HighlightWrapper": {
       marginTop: "calc(token(spacings.xlarge) * 2)",
     },
   },
 });
 
-export const SectionFooter = styled(Sections, {
+export const SectionFooter = styled("section", {
   base: {
     marginTop: "token(spacings.large)",
     paddingBottom: "token(spacings.xsmall)",
@@ -74,7 +49,3 @@ export const SectionFooter = styled(Sections, {
     },
   },
 });
-
-export const SectionMostPopular = styled(Sections);
-
-export const SectionFreeGames = styled(Sections);
