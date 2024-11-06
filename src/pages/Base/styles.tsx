@@ -9,6 +9,12 @@ export const Wrapper = styled("div", {
   },
 });
 
+export const Content = styled("div", {
+  base: {
+    flex: "1 0 auto",
+  },
+});
+
 export const SectionFooter = styled("section", {
   base: {
     marginTop: "token(spacings.large)",
