@@ -51,7 +51,7 @@ const settings: SliderSettings = {
 
 const modalSettings: SliderSettings = {
   ...commonSettings,
-  slidesToShow: 1,
+  slidesToShow: 1.1,
 };
 
 export type GalleryImageProps = {
