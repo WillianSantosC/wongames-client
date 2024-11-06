@@ -2,6 +2,7 @@ import { styled } from "@/panda/jsx";
 
 const Container = styled("div", {
   base: {
+    width: "100%",
     maxWidth: "token(grid.container)",
     marginLeft: "auto",
     marginRight: "auto",

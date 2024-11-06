@@ -1,5 +1,14 @@
 import { styled } from "@/panda/jsx";
 
+export const Wrapper = styled("div", {
+  base: {
+    display: "flex",
+    flexDirection: "column",
+    height: "100vh",
+    justifyContent: "space-between",
+  },
+});
+
 export const SectionFooter = styled("section", {
   base: {
     marginTop: "token(spacings.large)",
