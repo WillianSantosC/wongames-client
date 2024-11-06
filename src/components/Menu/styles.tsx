@@ -6,6 +6,7 @@ export const Wrapper = styled("menu", {
     alignItems: "center",
     padding: "token(spacings.small) 0",
     position: "relative",
+    zIndex: "token(layers.menu)",
   },
 });
 
