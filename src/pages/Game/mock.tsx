@@ -1,18 +1,8 @@
-import Game, { GameTemplateProps } from "@/pages/Game";
-
-import { Platform, Rating } from "@/components/GameDetails";
 import { items as galleryMock } from "@/components/Gallery/mock";
 import { items as gamesMock } from "@/components/GameCardSlider/mock";
 import { item as highlightMock } from "@/components/Highlight/mock";
 
-type ParamsProps = {
-  params: {
-    slug: string;
-  };
-};
-
-function getGamePageData(params: { slug: string }) {
-  const descriptionHTML = `
+const descriptionHTML = `
     <img src="https://items.gog.com/not_a_cp/ENG_product-page-addons-2020_yellow_on_black.png"><br>
     * Exclusive Digital Comic - Cyberpunk 2077: Big City Dreams will be available in English only.
     <hr><p class="module">Korean Voiceover will be added on 11th December 2020.</p><br><img alt="" src="https://items.gog.com/not_a_cp/EN/EN-About-the-Game.png"><br><br><b>Cyberpunk 2077</b> is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you.
@@ -30,40 +20,26 @@ function getGamePageData(params: { slug: string }) {
     respective owners.
   </p>`;
 
-  const output = {
-    cover:
-      "https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_1366x655.jpg",
-    gameInfo: {
-      title: `${params.slug.replace("-", " ").charAt(0).toUpperCase()}`,
-      price: "59.00",
-      description:
-        "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality",
-    },
-    gallery: galleryMock,
-    description: descriptionHTML,
-    details: {
-      developer: "CD PROJEKT RED",
-      releaseDate: "2020-12-10T23:00:00",
-      platforms: ["windows"] as Platform[],
-      publisher: "CD PROJEKT RED",
-      rating: "BR18" as Rating,
-      genres: ["Action", "Role-playing"],
-    },
-    upcomingGames: gamesMock,
-    upcomingHighlight: highlightMock,
-    recommendedGames: gamesMock,
-  };
-
-  return output;
-}
-
-export const dynamicParams = false;
-export function generateStaticParams() {
-  return [{ slug: "cyberpunk-2077" }];
-}
-
-export default function Index({ params }: ParamsProps) {
-  const props: GameTemplateProps = getGamePageData(params);
-
-  return <Game {...props} />;
-}
+export const item = {
+  cover:
+    "https://images.gog-statics.com/5643a7c831df452d29005caeca24c28cdbfaa6fbea5a9556b147ee26d325fa70_bg_crop_1366x655.jpg",
+  gameInfo: {
+    title: "Cyberpunk 2077",
+    price: "59.00",
+    description:
+      "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality",
+  },
+  gallery: galleryMock,
+  description: descriptionHTML,
+  details: {
+    developer: "CD PROJEKT RED",
+    releaseDate: "2020-12-10T23:00:00",
+    platforms: ["windows"],
+    publisher: "CD PROJEKT RED",
+    rating: "BR18",
+    genres: ["Action", "Role-playing"],
+  },
+  upcomingGames: gamesMock,
+  upcomingHighlight: highlightMock,
+  recommendedGames: gamesMock,
+};
