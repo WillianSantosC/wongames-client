@@ -10,6 +10,7 @@ import MediaMatch from "../MediaMatch";
 import LinkButton from "../LinkButton";
 import Logo from "../Logo";
 import * as S from "./styles";
+import Link from "next/link";
 
 type MenuProps = {
   username?: string;
@@ -27,12 +28,14 @@ const Menu = ({ username }: MenuProps) => {
       </MediaMatch>
 
       <S.LogoWrapper>
-        <Logo hideOnMobile />
+        <Link href="/" passHref>
+          <Logo hideOnMobile />
+        </Link>
       </S.LogoWrapper>
 
       <MediaMatch greaterThan="medium">
         <S.MenuNav className="MenuNav">
-          <S.MenuLink className="MenuLink" href="#">
+          <S.MenuLink className="MenuLink" href="/">
             Home
           </S.MenuLink>
           <S.MenuLink className="MenuLink" href="#">
@@ -59,7 +62,7 @@ const Menu = ({ username }: MenuProps) => {
       <S.MenuFull aria-hidden={!isOpen} isOpen={isOpen}>
         <CloseIcon aria-label="Close Menu" onClick={() => setIsOpen(false)} />
         <S.MenuNav className="MenuNav">
-          <S.MenuLink className="MenuLink" href="#">
+          <S.MenuLink className="MenuLink" href="/">
             Home
           </S.MenuLink>
           <S.MenuLink className="MenuLink" href="#">
