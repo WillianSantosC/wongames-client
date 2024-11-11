@@ -54,14 +54,4 @@ export const SectionDescription = styled(Section, {
   },
 });
 
-export const SectionGameDetails = styled(Section, {
-  base: {
-    "& > div": {
-      paddingBottom: {
-        base: "token(spacings.xlarge)",
-        _mdMI: "calc(token(spacings.xxlarge) * 2)",
-      },
-      borderBottom: "0.1rem solid rgba(181, 181, 181, 0.3)",
-    },
-  },
-});
+export const SectionGameDetails = styled(Section);
