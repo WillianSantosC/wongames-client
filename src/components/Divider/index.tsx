@@ -1,6 +1,6 @@
 import { styled } from "@/panda/jsx";
 
-export const Divider = styled("div", {
+export const Divider = styled("hr", {
   base: {
     margin: {
       base: "token(spacings.xxlarge) auto token(spacings.medium)",
