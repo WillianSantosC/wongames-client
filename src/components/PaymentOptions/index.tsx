@@ -1,6 +1,6 @@
 "use client";
 
-import { MouseEvent, useState } from "react";
+import { useState } from "react";
 import { MdOutlineAddShoppingCart, MdAdd } from "react-icons/md";
 import Image from "next/image";
 
@@ -13,7 +13,7 @@ import * as S from "./styles";
 
 export type PaymentOptionsProps = {
   cards?: PaymentCard[];
-  handlePayment: () => (event: MouseEvent<HTMLButtonElement>) => void;
+  handlePayment: () => void;
 };
 
 export type PaymentCard = {
@@ -60,7 +60,7 @@ const PaymentOptions = ({ cards, handlePayment }: PaymentOptionsProps) => {
         <Button
           fullWidth
           icon={<MdOutlineAddShoppingCart />}
-          onClick={handlePayment}
+          onClick={() => handlePayment}
           disabled={!checked}
         >
           Buy now
