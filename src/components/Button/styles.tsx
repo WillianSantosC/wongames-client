@@ -11,6 +11,11 @@ export const Wrapper = styled("button", {
     _hover: {
       background: "linear-gradient(180deg, #e35565 0%, #d958a6 50%)",
     },
+
+    _disabled: {
+      cursor: "not-allowed",
+      filter: "saturate(30%)",
+    },
   },
   variants: {
     size: {

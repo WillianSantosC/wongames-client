@@ -1,4 +1,7 @@
+import { ButtonHTMLAttributes } from "react";
 import * as S from "./styles";
+
+type ButtonTypes = ButtonHTMLAttributes<HTMLButtonElement>;
 
 type ButtonProps = {
   children?: React.ReactNode;
@@ -7,7 +10,7 @@ type ButtonProps = {
   minimal?: boolean;
   icon?: JSX.Element;
   onClick?: () => (event: React.MouseEvent<HTMLButtonElement>) => void;
-};
+} & ButtonTypes;
 
 const Button = ({
   children,
