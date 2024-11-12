@@ -8,6 +8,7 @@ type LinkButtonProps = {
   children?: React.ReactNode;
   size?: "small" | "medium" | "large";
   fullWidth?: boolean;
+  minimal?: boolean;
   icon?: JSX.Element;
 } & ButtonTypes;
 
@@ -16,6 +17,7 @@ const LinkButton = ({
   icon,
   size = "medium",
   fullWidth = false,
+  minimal = false,
   href,
   ...props
 }: LinkButtonProps) => (
@@ -23,6 +25,7 @@ const LinkButton = ({
     href={href}
     size={size}
     fullWidth={fullWidth}
+    minimal={minimal}
     hasIcon={!!icon}
     {...props}
   >

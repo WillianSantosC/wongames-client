@@ -49,5 +49,15 @@ export const Wrapper = styled("a", {
         },
       },
     },
+    minimal: {
+      true: {
+        background: "none",
+        color: "token(colors.primary)",
+        _hover: {
+          background: "none",
+          color: "#c00c78",
+        },
+      },
+    },
   },
 });
