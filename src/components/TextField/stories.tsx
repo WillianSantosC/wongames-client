@@ -11,7 +11,7 @@ export default {
   },
   args: {
     label: "E-mail",
-    labelFor: "Email",
+    name: "Email",
     icon: <MdOutlineEmail />,
     id: "Email",
     initialValue: "",
