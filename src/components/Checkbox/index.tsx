@@ -42,7 +42,11 @@ const Checkbox = ({
         {...props}
       />
       {!!label && (
-        <S.Label htmlFor={labelFor} labelColor={labelColor}>
+        <S.Label
+          className="CheckBoxLabel"
+          htmlFor={labelFor}
+          labelColor={labelColor}
+        >
           {label}
         </S.Label>
       )}
