@@ -7,6 +7,9 @@ export default {
   component: Profile,
   parameters: {
     layout: "fullscreen",
+    backgrounds: {
+      default: "won-dark",
+    },
   },
 } as Meta;
 
