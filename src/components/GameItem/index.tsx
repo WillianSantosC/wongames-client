@@ -25,7 +25,7 @@ const GameItem = ({
   downloadLink,
   paymentInfo,
 }: GameItemProps) => (
-  <S.Wrapper>
+  <S.Wrapper className="GameItemWrapper">
     <S.GameContent>
       <S.ImageBox>
         <Image src={img} alt={title} width={100} height={100} />
