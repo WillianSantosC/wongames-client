@@ -20,6 +20,7 @@ export const Footer = styled("div", {
     },
     padding: { base: "2rem", _mdMI: "token(spacings.small)" },
     display: "flex",
+    alignItems: "center",
     justifyContent: "space-between",
   },
 });
