@@ -12,6 +12,9 @@ export const Wrapper = styled("menu", {
 
 export const IconWrapper = styled("div", {
   base: {
+    "& .DropdownTitle": {
+      paddingRight: "0",
+    },
     color: "token(colors.white)",
     "& > svg": {
       transform: "scale(1.8)",
