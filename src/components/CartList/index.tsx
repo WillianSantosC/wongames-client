@@ -10,7 +10,7 @@ export type CartListProps = {
 };
 
 const CartList = ({ items, total, hasButton = false }: CartListProps) => (
-  <S.Wrapper>
+  <S.Wrapper className="CartListWrapper">
     {items?.map((item) => <GameItem key={item.title} {...item} />)}
 
     <S.Footer>
