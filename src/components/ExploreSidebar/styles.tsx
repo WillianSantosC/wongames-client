@@ -52,82 +52,76 @@ export const Footer = styled("div", {
 });
 
 export const Wrapper = styled("div", {
-  base: { display: "flex" },
+  base: {},
   variants: {
     isOpen: {
       true: {
-        zIndex: "token(layers.modal)",
-        position: "fixed",
-        width: "100%",
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        top: "0",
-        left: "0",
-
+        zIndex: { _mdMX: "token(layers.modal)" },
+        position: { _mdMX: "fixed" },
+        width: { _mdMX: "100%" },
+        height: { _mdMX: "100vh" },
+        display: { _mdMX: "flex" },
+        flexDirection: { _mdMX: "column" },
+        top: { _mdMX: "0" },
+        left: { _mdMX: "0" },
         "& .Overlay": {
-          zIndex: "token(layers.modal)",
-          backgroundColor: "#fff",
-          top: "0",
-          left: "0",
-          position: "fixed",
-          width: "100%",
-          height: "100vh",
-          opacity: "1",
+          zIndex: { _mdMX: "token(layers.modal)" },
+          backgroundColor: { _mdMX: "#fff" },
+          top: { _mdMX: "0" },
+          left: { _mdMX: "0" },
+          position: { _mdMX: "fixed" },
+          width: { _mdMX: "100%" },
+          height: { _mdMX: "100vh" },
+          opacity: { _mdMX: "1" },
         },
-
         "& .Content": {
-          marginTop: "token(spacings.medium)",
-          transform: "translateY(0)",
-          overflowY: "scroll",
+          marginTop: { _mdMX: "token(spacings.medium)" },
+          transform: { _mdMX: "translateY(0)" },
+          overflowY: { _mdMX: "scroll" },
         },
-
         "& .Content, .Footer, .IconWrapper": {
-          zIndex: "token(layers.modal)",
+          zIndex: { _mdMX: "token(layers.modal)" },
         },
-
         "& .HeadingWrapper": {
-          color: "token(colors.black)",
-          fontSize: "token(font.sizes.xlarge)",
-          fontWeight: "token(font.normal)",
-          marginBottom: "token(spacings.small)",
+          color: { _mdMX: "token(colors.black)" },
+          fontSize: { _mdMX: "token(font.sizes.xlarge)" },
+          fontWeight: { _mdMX: "token(font.normal)" },
+          marginBottom: { _mdMX: "token(spacings.small)" },
         },
-
         "& .RadioLabel, .CheckBoxLabel": {
-          color: "token(colors.black)",
+          color: { _mdMX: "token(colors.black)" },
         },
-
         "& .IconWrapper": {
-          color: "token(colors.black)",
-
+          color: { _mdMX: "token(colors.black)" },
           "& > svg": {
-            position: "absolute",
-            width: "30px",
-            right: "0.8rem",
-            top: "0.8rem",
+            position: { _mdMX: "absolute" },
+            width: { _mdMX: "30px" },
+            right: { _mdMX: "0.8rem" },
+            top: { _mdMX: "0.8rem" },
             _first: {
-              display: "none",
+              display: { _mdMX: "none" },
             },
           },
         },
       },
       false: {
         "& .IconWrapper": {
-          color: "token(colors.white)",
+          color: { _mdMX: "token(colors.white)" },
           "& > svg:last-child": {
-            display: "none",
+            display: { _mdMX: "none" },
           },
         },
-
         "& .Content": {
-          transform: "translateY(3rem)",
-          height: "0",
+          transform: { _mdMX: "translateY(3rem)" },
+          height: { _mdMX: "0" },
         },
-
         "& .Content, .Footer": {
-          visibility: "hidden",
-          position: "absolute",
-          left: "0",
+          visibility: { _mdMX: "hidden" },
+          position: { _mdMX: "absolute" },
+          left: { _mdMX: "0" },
+        },
+        "& .HeadingWrapper": {
+          marginBottom: { _mdMI: "token(spacings.small)" },
         },
       },
     },
