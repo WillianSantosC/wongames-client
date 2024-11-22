@@ -7,6 +7,25 @@ export const Wrapper = styled("main", {
     flexDirection: "column",
     alignSelf: "start",
   },
+  variants: {
+    isEmpty: {
+      true: {
+        "& .EmptyWrapper": {
+          paddingBottom: "token(spacings.medium)",
+        },
+        "& .EmptyImage": {
+          maxWidth: "20rem",
+        },
+        "& .EmptyTitle": {
+          fontSize: "token(font.sizes.large)",
+        },
+        "& .EmptyDescription": {
+          color: "token(colors.black)",
+          fontSize: "token(font.sizes.medium)",
+        },
+      },
+    },
+  },
 });
 
 export const Footer = styled("div", {
