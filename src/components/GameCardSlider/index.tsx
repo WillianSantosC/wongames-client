@@ -7,6 +7,7 @@ const settings: SliderSettings = {
   slidesToShow: 4,
   infinite: false,
   lazyLoad: "ondemand",
+  arrows: false,
   responsive: [
     {
       breakpoint: 1375,
