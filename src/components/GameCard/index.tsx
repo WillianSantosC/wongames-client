@@ -1,6 +1,5 @@
 import { MdOutlineAddShoppingCart as ShoppingCartIcon } from "react-icons/md";
 import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
-import Image from "next/image";
 
 import Ribbon, { RibbonColors, RibbonSizes } from "../Ribbon";
 import Button from "../Button";
@@ -38,14 +37,7 @@ const GameCard = ({
       </Ribbon>
     )}
     <S.ImageBox>
-      <Image
-        width="100"
-        height="100"
-        style={{ objectFit: "cover" }}
-        unoptimized={true}
-        src={img}
-        alt={title}
-      />
+      <img src={img} alt={title} />
     </S.ImageBox>
     <S.Content>
       <S.Info>

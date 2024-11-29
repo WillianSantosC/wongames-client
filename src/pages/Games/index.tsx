@@ -1,3 +1,5 @@
+"use client";
+
 import { MdOutlineKeyboardArrowDown as ArrowDown } from "react-icons/md";
 
 import Base from "../Base";

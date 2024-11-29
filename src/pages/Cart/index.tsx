@@ -27,7 +27,7 @@ const Cart = ({
   total,
   cards,
 }: CartProps) => {
-  const handlePayment = () => ({});
+  //const handlePayment = () => ({});
 
   return (
     <Base>
@@ -38,7 +38,7 @@ const Cart = ({
         {items?.length ? (
           <S.Content>
             <CartList items={items} total={total} />
-            <PaymentOptions cards={cards} handlePayment={handlePayment} />
+            <PaymentOptions cards={cards} />
           </S.Content>
         ) : (
           <Empty

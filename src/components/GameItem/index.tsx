@@ -1,5 +1,4 @@
 import { MdDownload } from "react-icons/md";
-import Image from "next/image";
 
 import * as S from "./styles";
 
@@ -28,7 +27,7 @@ const GameItem = ({
   <S.Wrapper className="GameItemWrapper">
     <S.GameContent>
       <S.ImageBox>
-        <Image src={img} alt={title} width={100} height={100} />
+        <img src={img} alt={title} width={100} height={100} />
       </S.ImageBox>
 
       <S.Content>
@@ -53,7 +52,7 @@ const GameItem = ({
         <p>{paymentInfo.purchaseDate}</p>
         <S.CardInfo>
           <span>{paymentInfo.number}</span>
-          <Image
+          <img
             src={paymentInfo.img}
             alt={paymentInfo.flag}
             width={60}

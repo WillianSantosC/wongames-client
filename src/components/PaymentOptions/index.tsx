@@ -13,7 +13,7 @@ import * as S from "./styles";
 
 export type PaymentOptionsProps = {
   cards?: PaymentCard[];
-  handlePayment: () => void;
+  //handlePayment: () => void;
 };
 
 export type PaymentCard = {
@@ -22,8 +22,12 @@ export type PaymentCard = {
   img: string;
 };
 
-const PaymentOptions = ({ cards, handlePayment }: PaymentOptionsProps) => {
+const PaymentOptions = ({ cards }: PaymentOptionsProps) => {
   const [checked, setChecked] = useState(false);
+
+  function handlePayment() {
+    return;
+  }
 
   return (
     <S.Wrapper>
